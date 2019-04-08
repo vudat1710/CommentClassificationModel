@@ -14,6 +14,7 @@ from keras.models import Model, Sequential
 from keras.layers import Convolution1D
 from keras import initializers, regularizers, constraints, optimizers, layers
 from keras.callbacks import EarlyStopping, ModelCheckpoint
+from langdetect import detect
 
 def create_data_and_labels(pos_path, neg_path):
     pos_reviews, neg_reviews = [], []
